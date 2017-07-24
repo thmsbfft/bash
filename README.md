@@ -5,6 +5,7 @@ A collection of small bash utils.
 
 - [smash-overlay](smash-overlay)
 - [backup-hdd](backup-hdd)
+- [screen-timelapse](screen-timelapse)
 
 ---
 
