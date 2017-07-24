@@ -12,7 +12,7 @@ A collection of small bash utils.
 
 Do something to every file in a folder:
 
-```
+```bash
 #!/bin/bash
 for filename in *; do
     echo "$filename"
@@ -21,7 +21,7 @@ done
 
 Do something every 5s:
 
-```
+```bash
 #!/bin/bash
 while sleep 5
 do    
@@ -31,7 +31,7 @@ done
 
 Ask for parameters:
 
-```
+```bash
 #!/bin/bash
 read -p "Do it? (y/n) " doit
 
@@ -44,7 +44,7 @@ fi
 
 Use the clipboard:
 
-```
+```bash
 # Print clipboard content to text file
 pbpaste > file.txt
 ```
