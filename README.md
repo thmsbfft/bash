@@ -3,7 +3,8 @@ A collection of small bash utils.
 
 ---
 
-[smash-overlay](smash-overlay)
+- [smash-overlay](smash-overlay)
+- [backup-hdd](backup-hdd)
 
 ---
 
@@ -32,10 +33,13 @@ Ask for parameters:
 
 ```
 #!/bin/bash
-printf "What: "
-read name
+read -p "Do it? (y/n) " doit
 
-echo $name
+if [[ $doit == "y" || $doit == "Y" ]]; then
+	echo "Do it"
+else
+	exit
+fi
 ```
 
 Use the clipboard:
@@ -55,6 +59,5 @@ To use a script from anywhere, add it to `/usr/local/bin/`.
 
 #### todo
 
-- Add rsync backup script
 - Add utils for imagemagick
 - Add utils for ffmpeg
