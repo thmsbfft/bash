@@ -2,7 +2,7 @@
 
 ---
 
-Smashes a `png` overlay atop a set of images. Takes images in `/original` and applies `overlay.png`, then saves in `/composed`. Overlay and original images should be the same size.
+Smashes a `png` overlay atop a set of images. Takes images in `/original` and applies `overlay.png`, then saves in `/composed`. Overlay and original images should be the same size. Requires `imagemagick`.
 
 Open `smash.command` to start.
 
