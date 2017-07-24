@@ -6,6 +6,7 @@ A collection of small bash utils.
 - [smash-overlay](smash-overlay)
 - [backup-hdd](backup-hdd)
 - [screen-timelapse](screen-timelapse)
+- [folder-size](folder-size)
 
 ---
 
@@ -62,3 +63,9 @@ To use a script from anywhere, add it to `/usr/local/bin/`.
 
 - Add utils for imagemagick
 - Add utils for ffmpeg
+
+#### to explore
+
+- Script as a service (macOS)
+- "Daemons" & init scripts
+- Scripts in Alfred
