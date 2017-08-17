@@ -53,9 +53,11 @@ pbpaste > file.txt
 
 #### tips
 
-To use a script as an executable, change the extension to `.command`. This will start the script from `/`, though, so you might want to tell it to navigate to where the script is located before doing anything. Add `cd "$(dirname "$0")"` to do so.
+To use a script as an executable, change the extension to `.command`. This will start the script from `/`, though, so you might want to tell it to navigate to where the script is located before doing anything. Add `cd "$(dirname "$0")"` at the top of the script to do so. You'll also have to `chmod 777 name_of_your_script.command` to be able to execute it.
 
 To use a script from anywhere, add it to `/usr/local/bin/`.
+
+Command substitution allows to replace a command with its output, e.g. `$(pwd)` gives the value of `pwd`.
 
 ---
 
