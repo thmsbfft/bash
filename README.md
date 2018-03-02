@@ -27,7 +27,7 @@ Do something every 5s:
 #!/bin/bash
 while sleep 5
 do    
-    echo "Yo"
+    echo "yo"
 done
 ```
 
@@ -55,6 +55,15 @@ Get today's date (YYYY-MM-DD):
 
 ```bash
 DATE=`date +%Y-%m-%d`
+```
+
+Ping an API:
+
+Here, a simple script outputs the contrast ratio of white on a color. We use webaim.org’s API, and pipe the output into `jq` to read a value out of the resulting json. `xargs echo -n` can allow to strip whitespace after the result.
+
+```bash
+COLOR="$1"
+curl -s https://webaim.org/resources/contrastchecker/\?fcolor\=FFFFFF\&bcolor\="$1"\&api | jq -r '.ratio'
 ```
 
 #### tips
