@@ -66,6 +66,12 @@ COLOR="$1"
 curl -s https://webaim.org/resources/contrastchecker/\?fcolor\=FFFFFF\&bcolor\="$1"\&api | jq -r '.ratio'
 ```
 
+Display a notification
+
+```bash
+osascript -e 'display notification "Lorem ipsum dolor sit amet" with title "Title"'
+```
+
 #### tips
 
 To use a script as an executable, change the extension to `.command`. This will start the script from `/`, though, so you might want to tell it to navigate to where the script is located before doing anything. Add `cd "$(dirname "$0")"` at the top of the script to do so. You'll also have to `chmod 777 name_of_your_script.command` to be able to execute it.
