@@ -66,7 +66,7 @@ COLOR="$1"
 curl -s https://webaim.org/resources/contrastchecker/\?fcolor\=FFFFFF\&bcolor\="$1"\&api | jq -r '.ratio'
 ```
 
-Display a notification
+Display a notification:
 
 ```bash
 osascript -e 'display notification "Lorem ipsum dolor sit amet" with title "Title"'
